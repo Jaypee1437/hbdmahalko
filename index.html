@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 22nd Birthday Mahal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+            transition: background-color 0.5s;
+        }
+        h1 {
+            color: #e91e63;
+            margin-bottom: 20px;
+        }
+        .message-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .image-container {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+        .fade-in {
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .heart {
+            color: red;
+            font-size: 20px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            animation: heartbeat 1s infinite alternate;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy 22nd Birthday Mahal!</h1>
+    <div class="message-container fade-in">
+        <div class="image-container">
+            <img src="1.jpg" alt="Your Girlfriend's Picture">
+        </div>
+        <p>My Dearest Mahal,</p>
+        <p>On this special day, as you celebrate your 22nd birthday, I can't help but reflect on our journey together. From the first moment we met at church, I knew there was something incredibly special about you. Our paths crossed in the most beautiful way, and as we began to chat, I felt a connection that I had never experienced before.</p>
+        <p>Even though I often find myself busy with work and my computer programming studies, not a single moment goes by without you in my thoughts. I pray for you constantly, asking the Lord to watch over you and keep you safe. Your dreams mean the world to me, and I wholeheartedly wish for you to achieve your goal of becoming a licensed professional teacher.</p>
+        <p>Always remember to take care of yourself and to keep pushing forward in your studies. Never forget to pray and seek guidance from the Lord. You are capable of accomplishing anything you set your mind to, and I believe in you wholeheartedly.</p>
+        <p>Happy birthday again, Mahal! May your day be filled with love, joy, and endless blessings.</p>
+        <p>With all my love,<br>JP</p>
+        <span class="heart">❤️</span>
+    </div>
+    <script>
+        document.body.addEventListener('mouseover', function() {
+            document.body.style.backgroundColor = '#ffeef8';
+        });
+        document.body.addEventListener('mouseout', function() {
+            document.body.style.backgroundColor = '#f9f9f9';
+        });
+    </script>
+</body>
+</html>
